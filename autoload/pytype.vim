@@ -1,4 +1,3 @@
-function pytype#ExecutePytype()
-    silent !clear
-    execute "!pytype -d import-error " . bufname("%")
+function! pytype#ExecutePytype() abort
+    lua require'init'.run()
 endfunction
